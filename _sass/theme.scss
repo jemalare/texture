@@ -61,12 +61,15 @@ figcaption {
 
 header {
 	// background-size: cover;
-	padding: 120px 0;
+	padding: 0 0;
+	padding-top: 60px;
+	// padding: 0 0;
 	color: #fff;
 	overflow: hidden;
 	h2 {
 		font-weight: normal;
 		margin-top: 5px;
+		margin-bottom: 5px;
 	}
 	h1 {
 		margin: 0;
@@ -224,26 +227,22 @@ header {
 }
 
 .navbar {
-	position: absolute;
-	top: 0;
-	right: 5vw;
+	// border: 1px solid white;
+
 	a {
 		color: inherit;
 	}
 	ul {
+		padding: 0;
+		margin: 0;
 		list-style-type: none;
 		li {
-			// background-color: #ff9f1c;
-			border: 1px solid #fff;
 			float: left;
-			// margin: 5px;
-			&:not(:first-child){
-				border-left: 0;
-			}
+			margin: 10px 0 0 10px;
 			padding: 10px 25px;
-			// border-radius: 4px;
+			border-radius: 10px 10px 0 0;
 			@include fluidType(15px, 17px);
-			transition: background-color .3s ease-in;
+			transition: background-color 0.1s ease-in;
 			&:hover {
 				background-color: rgba(#fff, 0.15);
 				cursor: pointer;
