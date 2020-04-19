@@ -1,7 +1,7 @@
-@import 'ext/fonts';
-@import 'ext/normalize';
-@import 'begin';
-@import 'syntax';
+@import "ext/fonts";
+@import "ext/normalize";
+@import "begin";
+@import "syntax";
 
 $linkColor: #999;
 $mobileW: 768px;
@@ -12,12 +12,14 @@ $leftWidth: 220px;
 $gray: #999;
 $lightGray: #eee;
 
-*,*:before,*:after {
+*,
+*:before,
+*:after {
 	box-sizing: border-box;
 }
 
 body {
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: "Nunito Sans", sans-serif;
 	@include fluidType(16px, 19px);
 	line-height: 1.55em;
 	margin: 0;
@@ -34,8 +36,9 @@ a {
 	}
 }
 
-
-h1, h2, h3 {
+h1,
+h2,
+h3 {
 	line-height: 1.2em;
 }
 
@@ -88,7 +91,7 @@ header {
 					margin-left: 0;
 				}
 				@include fluidType(26px, 34px);
-				transition: color .3s;
+				transition: color 0.3s;
 				&:hover {
 					color: $gray;
 				}
@@ -105,15 +108,15 @@ header {
 // Basic Container Class
 //
 .container {
-	margin:0 auto;
+	margin: 0 auto;
 	max-width: 720px;
 
 	div.highlighter-rouge {
 		right: 150px;
 	}
 
-	@media screen and  (max-width: $mobileWidth) {
-		margin:0 15px; 
+	@media screen and (max-width: $mobileWidth) {
+		margin: 0 15px;
 		div.highlighter-rouge {
 			right: 15px;
 		}
@@ -122,8 +125,8 @@ header {
 		}
 	}
 
-	@media screen and (max-width: $tabWidth) and (min-width: $mobileWidth){
-		margin:0 40px;	
+	@media screen and (max-width: $tabWidth) and (min-width: $mobileWidth) {
+		margin: 0 40px;
 		div.highlighter-rouge {
 			right: 40px;
 		}
@@ -132,8 +135,8 @@ header {
 		}
 	}
 
-	@media screen and (max-width: $desktopWidth) and (min-width: $tabWidth){
-		margin:0 80px;
+	@media screen and (max-width: $desktopWidth) and (min-width: $tabWidth) {
+		margin: 0 80px;
 		div.highlighter-rouge {
 			right: 80px;
 		}
@@ -143,7 +146,7 @@ header {
 	}
 
 	@media screen and (min-width: $desktopWidth) and (max-width: 1280px) {
-		margin:0 100px;
+		margin: 0 100px;
 		div.highlighter-rouge {
 			right: 100px;
 		}
@@ -155,8 +158,8 @@ header {
 
 .post-title {
 	color: #222;
-	transition: color .3s ease;
-	margin: .1em 0;
+	transition: color 0.3s ease;
+	margin: 0.1em 0;
 	&:hover {
 		color: $gray;
 		border-bottom: 0;
@@ -167,7 +170,7 @@ header {
 	font-weight: normal;
 	color: #ddd;
 
-	margin-top:.5em;
+	margin-top: 0.5em;
 	margin-bottom: 1.3em;
 }
 
@@ -198,7 +201,7 @@ header {
 .posts {
 	list-style-type: none;
 	padding: 0;
-	>li {
+	> li {
 		margin-bottom: 30px;
 		padding-bottom: 20px;
 		&:not(:last-child) {
@@ -207,7 +210,8 @@ header {
 	}
 }
 
-.posts, .post-container {
+.posts,
+.post-container {
 	margin-top: 40px;
 }
 
